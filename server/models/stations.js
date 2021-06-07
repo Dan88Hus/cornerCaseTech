@@ -5,7 +5,7 @@ const freqSchema = new mongoose.Schema({
         type: String,
     },
     freq: {
-        type: Number,
+        type: mongoose.Decimal128,
     }
 })
 

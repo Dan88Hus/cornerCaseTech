@@ -12,3 +12,9 @@ exports.listAllStations = async (req, res) => {
   }
 
 }
+
+exports.createStations= async (req, res) => {
+    const stations = await new Stations({name:req.body.name, freq: req.body.freq}).save()
+    console.log("Station created is:", stations)
+    res.json(stations)
+}
