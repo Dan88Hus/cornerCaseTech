@@ -9,19 +9,20 @@ const card = () => {
     return(
         <>
         <br />
-    <Header style={{ position: 'fixed', zIndex: 1, width: '42%' }}>
+    <Header style={{ position: 'fixed', zIndex: 1, width: '33.2%' }}>
             <div className="stationHeader rounded-top">
                 <div className="row">
-                    <div className="col-auto mr-3">
-                <LeftOutlined/>
+                    <div className="col-auto ml-2 mr-3">
+                    <LeftOutlined/>
                     </div>
-                    <div className="col-auto">
+
+                    <div className="col">
                     <h5 className="text-center pl-5 mr-3">STATIONS</h5>
                     </div>
-                    <div className="ml-5">
+                    
+                    <div className="col-auto mr-3">
                         <div>
-                            
-                    <PoweroffOutlined />
+                        <PoweroffOutlined/>
                         </div>
                     </div>
 
@@ -32,15 +33,15 @@ const card = () => {
     <br />
     <div className="site-card-border-less-wrapper ml-3 pl-0 pt-0">
 
-        <Card bordered={false} style={{ width: 100 }}>
+        <Card >
         <br />
           <div className="inner-textColor">
           <p >Card content</p>
-          <hr className="hrLine" style={{width: 200}}/>
+          <hr className="hrLine" style={{width: 380}}/>
           <p>Card content</p>
           <p>Card content</p>
           <p>Card content</p>
-
+          <p>Card content</p>
           </div>
         </Card>
       </div>
@@ -48,5 +49,4 @@ const card = () => {
       </>
     )
 }
-
 export default card
