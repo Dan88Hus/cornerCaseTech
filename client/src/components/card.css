@@ -1,7 +1,8 @@
 .site-card-border-less-wrapper {
     padding: 10px;
     background: #282833;
-    width: 34%;
+    width: 40%;
+    
   }
   .inner-textColor{
       color: #9ba4b6;
@@ -12,12 +13,13 @@
   .stationHeader{
       color: #ffffff;
       background-color: #eeae61;
+      margin-left: 16px;
   }
   .ant-layout-footer{
       /* background-color: #22222b !important; */
       background-color: white;
       /* margin-top: 20px; */
-      width: 34%;
+      width: 40%;
       margin-left: 16px;
       /* margin-bottom: 0 !important; */
 
