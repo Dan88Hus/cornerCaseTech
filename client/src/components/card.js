@@ -1,5 +1,6 @@
 import { Layout, Card } from 'antd';
 import './card.css'
+import Stations from './Allstations'
 import {LeftOutlined, PoweroffOutlined} from '@ant-design/icons';
 const { Header, Footer } = Layout;
 
@@ -34,15 +35,7 @@ const card = () => {
     <div className="site-card-border-less-wrapper ml-3 pl-0 pt-0">
 
         <Card >
-        <br />
-          <div className="inner-textColor">
-          <p >Card content</p>
-          <hr className="hrLine" style={{width: 380}}/>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-          </div>
+            <Stations/>
         </Card>
       </div>
     <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>Huseyin Ozdogan</Footer>
