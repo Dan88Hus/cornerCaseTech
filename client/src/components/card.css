@@ -1,0 +1,24 @@
+.site-card-border-less-wrapper {
+    padding: 10px;
+    background: #282833;
+    width: 34%;
+  }
+  .inner-textColor{
+      color: #9ba4b6;
+  }
+  .hrLine {
+    background-color: #42424b;
+  }
+  .stationHeader{
+      color: #ffffff;
+      background-color: #eeae61;
+  }
+  .ant-layout-footer{
+      /* background-color: #22222b !important; */
+      background-color: white;
+      /* margin-top: 20px; */
+      width: 34%;
+      margin-left: 16px;
+      /* margin-bottom: 0 !important; */
+
+  }
