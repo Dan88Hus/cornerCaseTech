@@ -50,7 +50,8 @@ const cardSelected = ({allstations, selectedStation}) => {
           <hr className="hrLine" style={{width: 380}}/>
         </div>}
 
-        {/* {allstations.map((st) => (
+        {allstations[1] && 
+        allstations.slice(1).map((st) => (
             <div key={st._id} className="inner-textColor">
             <div className="row">
                 <div className="col-auto">
@@ -64,7 +65,7 @@ const cardSelected = ({allstations, selectedStation}) => {
             </div>
           <hr className="hrLine" style={{width: 380}}/>
         </div>
-    ))} */}
+    ))}
         </Card>
       </div>
     <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>CURRENTLY PLAYING <br />{selectedStation}</Footer>
