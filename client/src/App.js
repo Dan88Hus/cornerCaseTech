@@ -36,7 +36,8 @@ function App() {
         </div>
           {/* {JSON.stringify(selectedStation)} */}
         <div className="col-auto ml-5">
-        <CardSelected selectedStation={selectedStation}/>
+        <CardSelected allstations={allstations}
+        selectedStation={selectedStation}/>
         </div>
 
       </div>

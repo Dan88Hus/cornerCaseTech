@@ -5,7 +5,7 @@ import {LeftOutlined, PoweroffOutlined} from '@ant-design/icons';
 const { Header, Footer } = Layout;
 
 
-const cardSelected = ({selectedStation}) => {
+const cardSelected = ({allstations, selectedStation}) => {
 
     return(
         <>
@@ -34,22 +34,21 @@ const cardSelected = ({selectedStation}) => {
         <Card >
         <br />
     {/* {JSON.stringify(allstations,null,4)} ok */}
-        {
-            <div className="inner-textColor">
+        {allstations.map((st) => (
+            <div key={st._id} className="inner-textColor">
             <div className="row">
                 <div className="col-auto">
                     <p className="pl-3 bg-primary"
-                    
-                    >test</p>
+                    >{st.name}</p>
                 </div>
 
                 <div className="col">
-                    <p className="float-right">num</p>
+                    <p className="float-right">{st.freq.$numberDecimal}</p>
                 </div>
             </div>
           <hr className="hrLine" style={{width: 380}}/>
         </div>
-    }
+    ))}
         </Card>
       </div>
     <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>Huseyin Ozdogan</Footer>
