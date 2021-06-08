@@ -33,8 +33,9 @@ const cardSelected = ({allstations, selectedStation}) => {
     <div className="site-card-border-less-wrapper ml-3 pl-0 pt-0">
         <Card >
         <br />
-    {/* {JSON.stringify(allstations,null,4)} ok */}
-        {<div className="inner-textColor">
+    {/* {JSON.stringify(allstations[0],null,4)} ok */}
+        {allstations[0] && 
+        <div className="inner-textColor">
             <div className="row">
                 <div className="col-auto">
                     <p className="pl-3 bg-primary"
