@@ -1,7 +1,9 @@
-import { Layout, Card } from 'antd';
+import { Layout, Card, Avatar } from 'antd';
 import './card.css'
 import Stations from './Allstations'
-import {LeftOutlined, PoweroffOutlined} from '@ant-design/icons';
+import {LeftOutlined, PoweroffOutlined, 
+    UserOutlined, MinusCircleOutlined, 
+    PlusCircleOutlined} from '@ant-design/icons';
 const { Header, Footer } = Layout;
 
 
@@ -23,7 +25,7 @@ const cardSelected = ({allstations, selectedStation}) => {
                     
                     <div className="col-auto mr-3">
                         <div>
-                        <PoweroffOutlined/>
+                        <PoweroffOutlined size={64}/>
                         </div>
                     </div>
                 </div>
@@ -49,6 +51,28 @@ const cardSelected = ({allstations, selectedStation}) => {
             </div>
           <hr className="hrLine" style={{width: 380}}/>
         </div>}
+
+        <div className="row">
+            <div className="col-auto float-left pl-5">
+            <MinusCircleOutlined style={{color: "#a8acbc"}} size="small"/>
+            </div>
+
+            <div className="col-auto pl-5 float-center">
+                <Avatar       
+                style={{
+                color: '#f56a00',
+                backgroundColor: '#fde3cf',}}
+                // icon={<UserOutlined />}
+                className="ml-5 float-center"
+                size={40}>No Image</Avatar>
+            </div>
+
+            <div className="col">
+            <PlusCircleOutlined style={{color: "#a8acbc"}} size={64} className="float-right"/>
+            </div>
+        </div>
+        
+        <hr className="hrLine" style={{width: 380}}/>
 
         {allstations[1] && 
         allstations.slice(1).map((st) => (
