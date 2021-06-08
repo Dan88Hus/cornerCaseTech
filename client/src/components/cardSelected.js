@@ -5,7 +5,7 @@ import {LeftOutlined, PoweroffOutlined} from '@ant-design/icons';
 const { Header, Footer } = Layout;
 
 
-const card = () => {
+const cardSelected = ({selectedStation}) => {
 
     return(
         <>
@@ -26,20 +26,34 @@ const card = () => {
                         <PoweroffOutlined/>
                         </div>
                     </div>
-
                 </div>
-               
             </div>
     </Header>
     <br />
     <div className="site-card-border-less-wrapper ml-3 pl-0 pt-0">
-
         <Card >
-            <Stations/>
+        <br />
+    {/* {JSON.stringify(allstations,null,4)} ok */}
+        {
+            <div className="inner-textColor">
+            <div className="row">
+                <div className="col-auto">
+                    <p className="pl-3 bg-primary"
+                    
+                    >test</p>
+                </div>
+
+                <div className="col">
+                    <p className="float-right">num</p>
+                </div>
+            </div>
+          <hr className="hrLine" style={{width: 380}}/>
+        </div>
+    }
         </Card>
       </div>
     <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>Huseyin Ozdogan</Footer>
       </>
     )
 }
-export default card
+export default cardSelected
