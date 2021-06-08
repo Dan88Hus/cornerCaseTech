@@ -34,7 +34,22 @@ const cardSelected = ({allstations, selectedStation}) => {
         <Card >
         <br />
     {/* {JSON.stringify(allstations,null,4)} ok */}
-        {allstations.map((st) => (
+        {<div className="inner-textColor">
+            <div className="row">
+                <div className="col-auto">
+                    <p className="pl-3 bg-primary"
+                    >{allstations[0].name}</p>
+                </div>
+
+                <div className="col">
+                    {/* {JSON.stringify(allstations[0].freq.$numberDecimal)} */}
+                    <p className="float-right">{allstations[0].freq.$numberDecimal}</p>
+                </div>
+            </div>
+          <hr className="hrLine" style={{width: 380}}/>
+        </div>}
+
+        {/* {allstations.map((st) => (
             <div key={st._id} className="inner-textColor">
             <div className="row">
                 <div className="col-auto">
@@ -48,10 +63,10 @@ const cardSelected = ({allstations, selectedStation}) => {
             </div>
           <hr className="hrLine" style={{width: 380}}/>
         </div>
-    ))}
+    ))} */}
         </Card>
       </div>
-    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>Huseyin Ozdogan</Footer>
+    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>CURRENTLY PLAYING <br />{selectedStation}</Footer>
       </>
     )
 }
