@@ -25,11 +25,11 @@ const Stations = () => {
             <div key={st._id} className="inner-textColor">
                 <div className="row">
                     <div className="col-auto">
-                        <p >{st.name}</p>
+                        <p className="pl-2">{st.name}</p>
                     </div>
 
                     <div className="col">
-                        <p >{st.freq.$numberDecimal}</p>
+                        <p className="float-right">{st.freq.$numberDecimal}</p>
                     </div>
                 </div>
               <hr className="hrLine" style={{width: 380}}/>
