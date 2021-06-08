@@ -12,7 +12,9 @@ const cardSelected = ({allstations, selectedStation}) => {
     return(
         <>
         <br />
-    <Header style={{ position: 'fixed', zIndex: 1, width: '33.2%' }}>
+        <div className="ml-5">
+
+    <Header style={{ position: 'fixed', zIndex: 1, width: '32.6%' }}>
             <div className="stationHeader rounded-top">
                 <div className="row">
                     <div className="col-auto ml-2 mr-3">
@@ -54,21 +56,22 @@ const cardSelected = ({allstations, selectedStation}) => {
 
         <div className="row">
             <div className="col-auto float-left pl-5">
-            <MinusCircleOutlined style={{color: "#a8acbc"}} size="small"/>
+            <MinusCircleOutlined style={{color: "#a8acbc", cursor: "pointer"}} 
+            size="small"/>
             </div>
 
-            <div className="col-auto pl-5 float-center">
+            <div className="col pl-5 float-right">
                 <Avatar       
-                style={{
-                color: '#f56a00',
-                backgroundColor: '#fde3cf',}}
-                // icon={<UserOutlined />}
-                className="ml-5 float-center"
-                size={40}>No Image</Avatar>
+                style={{color: '#a8acbc'}}
+                icon={<UserOutlined />}
+                className="ml-5 float-right"
+                size={64}>No Image</Avatar>
             </div>
 
             <div className="col">
-            <PlusCircleOutlined style={{color: "#a8acbc"}} size={64} className="float-right"/>
+            <PlusCircleOutlined
+             style={{color: "#a8acbc", cursor: "pointer"}} 
+             size={64} className="float-right"/>
             </div>
         </div>
         
@@ -92,7 +95,9 @@ const cardSelected = ({allstations, selectedStation}) => {
     ))}
         </Card>
       </div>
-    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>CURRENTLY PLAYING <br />{selectedStation}</Footer>
+    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ color: "#a8acbc", textAlign: 'center'}}>CURRENTLY PLAYING <br />{selectedStation}</Footer>
+    </div>
+
       </>
     )
 }

@@ -24,7 +24,7 @@ function App() {
   
   return (
     
-    <div className="background">
+    <div className="container-fluid background">
       <div className="row">
 
         <div className="col-auto mr-5">

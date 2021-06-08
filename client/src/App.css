@@ -1,6 +1,7 @@
 .background{
   background-color: #20202b !important;
   height: 100vh !important;
+  /* width: 100vh !important; */
 }
 
 .App {

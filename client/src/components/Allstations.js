@@ -17,7 +17,10 @@ const Stations = ({allstations, selectedStation, setSelectedStation}) => {
     return(
         <>
         <br />
-        <Header style={{ position: 'fixed', zIndex: 1, width: '33.2%' }}>
+        <div className="ml-5">
+
+
+        <Header style={{ position: 'fixed', zIndex: 1, width: '32.6%' }}>
                 <div className="stationHeader rounded-top">
                     <div className="row">
                         <div className="col-auto ml-2 mr-3">
@@ -45,7 +48,7 @@ const Stations = ({allstations, selectedStation, setSelectedStation}) => {
         {allstations.map((st) => (
             <div key={st._id} className="inner-textColor">
             <div className="row">
-                <div className="col-auto">
+                <div className="col-auto" style={{cursor: "pointer"}}>
                     <p className="pl-3 bg-primary"
                     onClick={handleClick}
                     >{st.name}</p>
@@ -61,7 +64,10 @@ const Stations = ({allstations, selectedStation, setSelectedStation}) => {
         </Card>
     </div>
 
-    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ textAlign: 'center'}}>Huseyin Ozdogan</Footer>
+    <Footer className="ant-layout-footer rounded-bottom mb-0" style={{ color: "#a8acbc",textAlign: 'center'}}>Huseyin Ozdogan</Footer>
+    </div>
+ 
+
     {/* {JSON.stringify(allstations,null,4)} ok */}
     </>
     )

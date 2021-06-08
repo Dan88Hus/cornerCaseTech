@@ -1,3 +1,4 @@
+
 .site-card-border-less-wrapper {
     padding: 10px;
     background: #282833;
@@ -17,9 +18,11 @@
   }
   .ant-layout-footer{
       /* background-color: #22222b !important; */
-      background-color: white;
+      background-color: #22222b;
+      color: "#a8acbc" !important;
       /* margin-top: 20px; */
       width: 102%;
+      height: 10%;
       margin-left: 16px;
       /* margin-bottom: 0 !important; */
 
